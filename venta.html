@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/estilos.css" />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+    <link rel="stylesheet" href="./CSS/animation.css" />
+    <link rel="stylesheet" href="./CSS/gridProducto.css">
+    <title>BRAND-Venta</title>
+  </head>
+  <body>
+    <style>
+      html{
+        height: 100%;
+        position: relative;
+      }
+      footer{
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+    <!-- Aqui empieza el navBar -->
+    <nav class="fadeInDown">
+      <div class="brand-img">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <div class="brand-menuoptions">
+        <ul>
+          <li><a href="">Faqs</a></li>
+          <li><a href="">Productos y Description</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Aqui acaba el navBar -->
+    <!-- Inicia del formulario -->
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <div class="modulo-Pago">
+              <div class="modulo-img">
+                <img src="./images/box2.png" alt="">
+              </div>
+              <h3>
+                Producto 1
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit harum voluptas est, nam culpa assumenda saepe in ratione magni facilis sed necessitatibus odio qui quae consequuntur quam molestiae ad molestias!
+              </p>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="modulo-Pago">
+             <form action="">
+               <label for="name">Nombre</label>
+                <br>
+               <input type="text" name="name" placeholder="" class="form">
+               <br>
+               <label for="email">E-mail</label>
+                <br>
+               <input type="text" name="email" placeholder="" class="form">
+               <br>
+               <label for="phone">Telefono</label>
+                <br>
+               <input type="text" name="phone" placeholder="" class="form">
+               <br>
+               <input type="submit" name="submit" class="main-button" value="Confirmar Pago">
+             </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Inicia footer -->
+    <footer class="footer">
+      <p>Terminos y Condiciones</p>
+      <p>CopyRigth</p>
+      <p>bryangallo95@hotmail.com</p>
+    </footer>
+    <!-- Termina Footer -->
+    <!-- Script -->
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

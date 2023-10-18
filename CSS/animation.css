@@ -1,0 +1,55 @@
+/*Utilizamos la clase que se llama fadeIn*/
+.fadeIn{
+  /*cuando no anima la animacion establecida no funciona es importante que cumpla con otros objetivos con respecto a los navegadores e incluimos -webkit- que asegura que todos estos valores se puedan cumplir */
+  /*indica la duracion de la animacion*/
+  /*-webkit-animation-duration: 4s;*/
+  animation-duration: 4s;
+  /*este atributo define que la regla se va a cumplir de ida como de regreso */
+  animation-fill-mode: both;
+  /*con esto le asginamos un nombre*/
+  animation-name:fadeIn;
+}
+/*despues de @keyframe va el identificador que en este caso nosotros asignamos en el animation-name */
+@keyframes fadeIn{
+  /*aqui definimos que animaciones tiene esta clase*/
+  /*aqui de que propiedad va a empezar*/
+  from{
+    opacity:0;
+  }
+  /*y aqui indicamos a donde llega o que hace*/
+  to{
+    opacity:1 ;
+  }
+}
+/*fadeInDown*/
+.fadeInDown{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+}
+@keyframes fadeInDown{
+  from{
+    opacity: 0;
+    transform: translate3d(0,-100%,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+/*fadeInUp*/
+.fadeInUp{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
